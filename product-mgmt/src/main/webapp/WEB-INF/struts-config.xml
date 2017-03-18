@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+
+	<form-beans>
+		<form-bean name="homepageForm" type="web.shp.online.form.HomepageForm"></form-bean>
+		<!-- TODO Form beans here -->
+	</form-beans>
+	<action-mappings>
+		<action path="/homepage" name="homepageForm"
+			type="web.shp.online.action.HomepageAction">
+			<forward name="success" path="/jsp/homepage.jsp"></forward>
+		</action>
+	</action-mappings>
+</struts-config>
